@@ -48,3 +48,9 @@ current_line = current_line + 1
 # Print current line
 print "current_line = %s" % current_line
 print_a_line(current_line, current_file)
+
+# Study drills
+# 1. Add comments for every line
+# 2. Each time print_a_line is run, you are passing in a variable current_line. Write out what current_line is equal to on each function call, and trace how it becomes line_count in print_a_line.
+# 3. Find each place a function is used, and check its def to make sure that you are giving it the right arguments.
+# Looks fine to me.
