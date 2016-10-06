@@ -14,7 +14,9 @@ def rewind(f):
 
 # Print current line from the file
 def print_a_line(line_count, f):
-    print line_count, f.readline()
+    # Modify output to explicitly display line_count for comparision against
+    # value of current_line which is passed in when this function is called.
+    print "line_count = %s" % line_count, f.readline() 
 
 # Create local variable for input_file
 current_file = open(input_file)
@@ -32,14 +34,17 @@ print "Let's print three lines:"
 
 current_line = 1
 # Print current line
+print "current_line = %s" % current_line
 print_a_line(current_line, current_file)
 
 # Increment which line to print
 current_line = current_line + 1
 # Print current line
+print "current_line = %s" % current_line
 print_a_line(current_line, current_file)
 
 # Increment which line to print
 current_line = current_line + 1
 # Print current line
+print "current_line = %s" % current_line
 print_a_line(current_line, current_file)
