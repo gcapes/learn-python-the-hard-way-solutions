@@ -16,7 +16,8 @@ def rewind(f):
 def print_a_line(line_count, f):
     # Modify output to explicitly display line_count for comparision against
     # value of current_line which is passed in when this function is called.
-    print "line_count = %s" % line_count, f.readline() 
+    print "line_count = %s" % line_count, f.readline(), # Add trailing comma 
+    # to suppress new line after readline()
 
 # Create local variable for input_file
 current_file = open(input_file)
